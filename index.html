@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>Simulador de Loteria</nav>
+    <div class="about">Esse site faz uma simulação da probabilidade de seu número ser sorteado em um jogo da loteria, <u><b>digite seu número da sorte nas casas abaixo de 01 à 60</b></u> e veja em quantos jogos seguidos foram necessário para ele ser sorteado.<br> Não se preocupe com a ordem, ela será corrigida no calculo.
+    </div>
+    <div class="numInput">
+        <input type="number" class="input1 input" maxlength="2" max="60" min="1">
+        <input type="number" class="input2 input" maxlength="2" max="60" min="1">
+        <input type="number" class="input3 input" maxlength="2" max="60" min="1">
+        <input type="number" class="input4 input" maxlength="2" max="60" min="1">
+        <input type="number" class="input5 input" maxlength="2" max="60" min="1">
+        <input type="number" class="input6 input" maxlength="2" max="60" min="1">
+    </div>
+    <div class="botoes">
+        <button class="jogar">Sortear uma vez</button>
+        <button class="jogarSeq">Sortear em sequência</button>
+        <button class="pararSorteio">Parar/Zerar Sorteio</button>
+    </div>
+    <div class="instruct">"Sortear uma vez" permite realizar um jogo de cada vez, "Sortear em sequência" fará com que inicie vários jogos automáticamente (clique várias vezes para aumentar a velocidade), vale lembrar que podem levar minutos, horas ou até vários dias antes do seu número ser sorteado, as chances são de 1 em 50.063.860
+    </div>
+    <div class="numOutput">
+        <input type="text" class="output1 output" maxlength="2" disabled>
+        <input type="text" class="output2 output" maxlength="2" disabled>
+        <input type="text" class="output3 output" maxlength="2" disabled>
+        <input type="text" class="output4 output" maxlength="2" disabled>
+        <input type="text" class="output5 output" maxlength="2" disabled>
+        <input type="text" class="output6 output" maxlength="2" disabled>
+    </div>
+    
+    <span class="sortTitle">Relatório de Jogo</span>
+    <div class="tabela">
+        <span class="sortTotal">Sorteios realizados: 0</span>
+        <span class="sortElements sortSena">jogos com 6 acertos: 0</span>
+        <span class="sortElements sortQuina">jogos com 5 acertos: 0</span>
+        <span class="sortElements sortQuadra">jogos com 4 acertos: 0</span>
+        <span class="sortElements sortTres">jogos com 3 acertos: 0</span>
+        <span class="sortElements sortDois">jogos com 2 acertos: 0</span>
+        <span class="sortElements sortUm">jogos com 1 acertos: 0</span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
