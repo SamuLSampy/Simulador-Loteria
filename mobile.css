@@ -1,0 +1,152 @@
+@media (max-width:780px){
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;     
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none; 
+        margin: 0;
+    }
+
+    body{
+        width: 100vw;
+        margin: 0;
+    }
+
+    nav{
+        background-color: #4472C4;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        height: 30px;
+    }
+
+    .about, .instruct {
+        background-color: #C5E0B4;
+        color: #548235;
+        padding: 10px;
+        border: 1px solid #548235;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .numInput{
+        justify-content: center;
+        display: flex;
+        gap: 1vh;
+    }
+    .input{
+        all: unset;
+        background-color: #D0CECE;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #404040;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px 0px 20px 0px;
+        font-size: 20px;
+        color: #404040;
+        text-align: center;
+    }
+
+    .numOutput{
+        margin: 10px;
+        justify-content: center;
+        display: flex;
+        gap: 1vh;
+    }
+
+    .output{
+        all: unset;
+        background-color: #919191;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #404040;
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 20px;
+        color: #404040;
+        text-align: center;
+    }
+
+    .botoes{
+    display: flex;
+}
+
+    .botoes button{
+        all: unset;
+        background-color: #4472C4;
+        padding: 5px;
+        height: 40px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border: 1px solid #243d68;
+        border-radius: 10px;
+        user-select: none;
+        margin: 10px;
+        transition: 0.1s scale ease-in-out, 0.1s filter ease-in-out;
+        cursor: pointer;
+    }
+
+    .botoes button:active{
+        filter: brightness(90%);
+        scale: 0.95;
+    }
+
+    .botoes .pararSorteio{
+        background-color: rgb(133, 0, 0);
+        border: 1px solid rgb(68, 0, 0);
+    }
+
+    .tabela{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 0;
+    font-size: 20px;
+    gap: 5px;
+    padding-left: 20px;
+    font-weight: 500;
+    }
+
+    .sortTitle{
+        background-color: rgb(218, 191, 142);
+        margin-top: 10px;
+        width: 100vw;
+        padding: 0px 10px 0px 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sortSena{
+        color: green;
+    }
+
+    .sortQuina{
+        color: rgb(128, 128, 0);
+    }
+
+    .sortQuadra{
+        color: rgb(128, 105, 0);
+    }
+
+    .sortTres{
+        color: rgb(128, 94, 0);
+    }
+
+    .sortDois{
+        color: rgb(128, 58, 0);
+    }
+
+    .sortUm{
+        color: rgb(128, 0, 0);
+    }
+}
