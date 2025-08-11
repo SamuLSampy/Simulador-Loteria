@@ -75,6 +75,36 @@
         text-align: center;
     }
 
+    .botoes{
+    display: flex;
+}
+
+    .botoes button{
+        all: unset;
+        background-color: #4472C4;
+        padding: 5px;
+        height: 40px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border: 1px solid #243d68;
+        border-radius: 10px;
+        user-select: none;
+        margin: 10px;
+        transition: 0.1s scale ease-in-out, 0.1s filter ease-in-out;
+        cursor: pointer;
+    }
+
+    .botoes button:active{
+        filter: brightness(90%);
+        scale: 0.95;
+    }
+
+    .botoes .pararSorteio{
+        background-color: rgb(133, 0, 0);
+        border: 1px solid rgb(68, 0, 0);
+    }
+
     .tabela{
     background-color: wheat;
     display: flex;
